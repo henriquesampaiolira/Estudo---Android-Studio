@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/et_v1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:numeric="decimal"
+            android:text="0"
+            android:textAlignment="center"
+            tools:ignore="Deprecated" />
+
+        <EditText
+            android:id="@+id/et_v2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:numeric="decimal"
+            android:text="0"
+            android:textAlignment="center"
+            tools:ignore="Deprecated" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:textAlignment="center">
+
+            <Button
+                android:id="@+id/somar"
+                android:layout_width="400px"
+                android:layout_height="250px"
+                android:onClick="opera"
+                android:text="SOMAR" />
+
+            <Button
+                android:id="@+id/subtrair"
+                android:layout_width="400px"
+                android:layout_height="250px"
+                android:onClick="opera"
+                android:text="SUBTRAIR" />
+
+            <Button
+                android:id="@+id/dividir"
+                android:layout_width="400px"
+                android:layout_height="250px"
+                android:onClick="opera"
+                android:text="DIVIDIR" />
+
+            <Button
+                android:id="@+id/multiplicar"
+                android:layout_width="400px"
+                android:layout_height="250px"
+                android:onClick="opera"
+                android:text="MULTIPLICAR" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resultado:"
+                android:textAlignment="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/resultado"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="50px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

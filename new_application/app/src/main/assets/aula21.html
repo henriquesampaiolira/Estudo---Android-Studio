@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1>TESTE WEB</h1>
+		<form name="form1">
+			Nome:<input type="text" name="txt_nome"/><br/>
+			Idade:<input type="text" name="txt_idade"/><br/>
+			Resultado:<input type="text" name="txt_res"/><br/>
+			<input type="button" value="mostrar" onClick="mostrarDados()"/>
+		</form>
+		<a href="pagina2.html">Página 2</a>
+		<script>
+			function mostrarDados(){
+				document.form1.txt_res.value="Nome:"+document.form1.txt_nome.value+" - Idade:"+document.form1.txt_idade.value;
+			}
+		</script>
+	</body>
+</html>
