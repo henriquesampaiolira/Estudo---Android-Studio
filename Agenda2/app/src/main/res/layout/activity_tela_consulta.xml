@@ -41,7 +41,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Digite o nome..."
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -62,7 +63,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Digite o telefone..."
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -80,6 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="anteRegis"
                 android:text="Retroceder" />
 
             <Space
@@ -92,6 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="proxRegis"
                 android:text="Avançar" />
 
             <Space
